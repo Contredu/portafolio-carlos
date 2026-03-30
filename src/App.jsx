@@ -21,14 +21,14 @@ function App() {
   return (
     <>
       <div className="bg-linear-to-r from-blue-950 via-blue-600
-     to-fuchsia-700 text-center p-5 ">
+     to-fuchsia-700 text-center p-5">
 
-        <div className="border border-black rounded-lg shadow-lg/50 shadow-black text-white">
+        <div className="flex flex-col border border-black rounded-lg shadow-lg/50 shadow-black text-white">
           {/* Header */}
-          <div className="grid grid-cols-2 gap-2 sm:grid-cols-1 ">
+          <div className="flex-row flex-wrap justify-between items-center p-4">
 
             {/* Side left */}
-            <div className="my-4">
+            <div className="flex-1 my-4">
               <h2 className="font-serif text-4xl">Conéctate conmigo</h2>
               <section className="flex justify-center items-center my-6 gap-10">
                 <a className="size-20 rounded-full bg-gray-400 shadow-black/80 shadow-lg"></a>
@@ -41,7 +41,7 @@ function App() {
             </div>
 
             {/* Side rigth */}
-            <div className="my-4 mx-4 border rounded-xl p-4 bg-white/10 shadow-md shadow-white/20">
+            <div className="flex-1 my-4 mx-4 border rounded-xl p-4 bg-white/10 shadow-md shadow-white/20">
 
               {/* Card presentation */}
               <div className="flex justify-center items-center">
@@ -63,7 +63,7 @@ function App() {
 
           {/* Body */}
           <h1 className="text-5xl shadow-lg shadow-black/30 my-10 p-4">Mis proyectos</h1>
-          <div className="grid grid-cols-3 gap-2">
+          <div className="flex flex-wrap justify-between items-center p-4">
 
             {/* Projects Whit AI */}
             <div className="m-2">
@@ -117,7 +117,7 @@ function App() {
               {OwnProjects.length === 0 ? (
                 <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
               ) : (OwnProjects.map((project) =>
-                <div>
+                
                   <div className="m-5 bg-white/20 border-2 border-black rounded-lg" key={project.id}>
                     <img src="./src/assets/Reno.png" className="p-2 justify-center size-fit object-cover" />
                     <div className="my-2">
@@ -128,7 +128,6 @@ function App() {
                       Enlace a repositorio
                     </a>
                   </div>
-                </div>
               )
               )}
 
