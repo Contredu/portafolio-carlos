@@ -70,7 +70,7 @@ function App() {
 
 
           {/* Body */}
-          <h1 className="text-5xl shadow-lg shadow-black/30 my-10 p-4">Mis proyectos</h1>
+          <h1 className="flex justify-center text-5xl shadow-lg shadow-black/30 my-10 p-4">Mis proyectos</h1>
           <div className="grid grid-cols-1 p-4 sm:grid-cols-3 gap-4">
 
             {/* Projects Whit AI */}
@@ -97,7 +97,7 @@ function App() {
 
             {/* collaborative projects */}
             <div className="m-2">
-              <h2 className="text-3xl border border-white rounded-4xl m-2 p-1 shadow-lg shadow-gray-600/80 bg-white/20">Proyectos colaborativos</h2>
+              <h2 className="flex justify-center text-3xl border border-white rounded-4xl m-2 p-1 shadow-lg shadow-gray-600/80 bg-white/20">Proyectos colaborativos</h2>
 
               {CollaborativeProjects.length === 0 ? (
                 <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
