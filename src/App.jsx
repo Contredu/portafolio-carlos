@@ -1,3 +1,7 @@
+import { Github } from "./components/GithubIcons"
+import { Linkedin } from "./components/LinkedindIcons"
+import { iconX } from "./components/XIcons"
+import { gmail } from "./components/GmailIcons"
 
 function App() {
 
@@ -27,7 +31,7 @@ function App() {
       imagen: "./src/assets/Reno.png",
       description: "Proyecto en el que teniamos que demostrar nuestras habilidades con lo aprendido durante el curso, en este proyecto trabaje en la base del backend desarrollando bases de datos y endpoints trabajando con Python MySQL, y en la parte del Frontend desarrollando vista necesaria para la interfaz de usuario trabajando con React y bootstrap."
     }
-    
+
   ]
 
   const OwnProjects = [
@@ -53,15 +57,14 @@ function App() {
             {/* Side left */}
             <div className="my-4 p-4">
               <h2 className="font-serif text-4xl text-shadow-lg text-shadow-gray-900">Conéctate conmigo</h2>
-              <section className="flex flex-wrap justify-center items-center my-6 gap-10">
-                <a className="size-20 rounded-full bg-gray-400 shadow-black/80 shadow-lg"></a>
+              <section className="flex flex-wrap justify-center items-start my-6 gap-10">
+                <Github />
 
-                <a className=" size-20 rounded-full bg-gray-400 shadow-black/80 shadow-lg"></a>
+                <Linkedin />
 
-                <a className=" size-20 rounded-full bg-gray-400 shadow-black/80 shadow-lg"></a>
+                {iconX()}
 
-                <a className=" size-20 rounded-full bg-gray-400 shadow-black/80 shadow-lg"></a>
-
+                {gmail()}
 
               </section>
             </div>
