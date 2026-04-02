@@ -1,11 +1,13 @@
 export const Linkedin = () => {
 
-    const urlLinkedin = "https://www.linkedin.com/in/contredu"
+    const urlLinkedin = "https://www.linkedin.com/in/carlos-enrique-contreras-duque/"
 
     return (
         <>
-            <a className="size-20 rounded-full bg-white shadow-black/80 shadow-lg" href={urlLinkedin} target="_blank">
-                <img src="./src/SVG Redes sociales/Linkedin.svg" className="size-20 rounded-full" alt="Logo linkedin" />
+            <a className="size-16 rounded-full  shadow-black/80 shadow-lg transition-transform duration-300 hover:scale-110" href={urlLinkedin} target="_blank">
+                <svg className="bg-white text-[#1212DE] size-16 rounded-full">
+                    <use href="./src/SVG Redes sociales/sprite.svg#icon-linkedin" />
+                </svg>
             </a>
         </>
     )
