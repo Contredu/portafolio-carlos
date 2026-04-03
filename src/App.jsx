@@ -14,7 +14,7 @@ function App() {
       name: "Inoxia Ecommerce",
       url: "https://github.com/Contredu/portafolio-carlos",
       imagen: "./src/assets/inoxia.png",
-      description: "Les presento mi portafolio mi primer proyecto propio hecho desde cero, aquí he utilizado React y Tailwind CSS, demostrando mis habilidades en desarrollo web."
+      description: "Actualmente en desarrollo, proximamente disponible."
     }  
   ]
 
@@ -128,7 +128,7 @@ function App() {
             </div>
           </div>
         </div>
-        <h4 className="mt-2 text-lg font-bold">&copy; 2026 Carlos.Developer Diseñado 100% con código.</h4>
+        <h4 className="mt-2 text-lg font-bold">&copy; 2026 Diseñado por Carlos.Developer</h4>
       </div>
     </>
   )
