@@ -1,8 +1,10 @@
-import { Github } from "./components/GithubIcons"
-import { Linkedin } from "./components/LinkedindIcons"
-import { XIcon } from "./components/XIcons"
-import { GmailIcon } from "./components/GmailIcons"
+import { Github } from "./components/Button/GithubIcons"
+import { Linkedin } from "./components/Button/LinkedindIcons"
+import { XIcon } from "./components/Button/XIcons"
+import { GmailIcon } from "./components/Button/GmailIcons"
 import { CardDetails } from "./components/Common/Card"
+import { MySkills } from "./components/Common/Skills"
+import { CardPresentation } from "./components/Common/CardPresentation"
 
 function App() {
 
@@ -55,38 +57,27 @@ function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 justify-around items-center p-4">
 
             {/* Side left */}
-            <div className="my-4 p-4">
+            <div className="my-4 p-4 flex justify-center items-center flex-col gap-4">
               <h2 className="font-serif text-4xl text-shadow-lg text-shadow-gray-900">Conéctate conmigo</h2>
               <section className="flex flex-wrap justify-center items-start my-6 gap-8">
-
                 <Github />
                 <Linkedin />
                 <XIcon />
                 <GmailIcon />
+              </section>
 
+              {/* my skills */}
+              <h2 className="my-6 w-[50%] text-center font-serif text-4xl text-shadow-lg text-shadow-gray-900 border-b border-black shadow-xl shadow-black/40">Mis skills</h2>
+              <section className="flex flex-wrap justify-center items-start gap-4">
+                <MySkills />
               </section>
             </div>
 
             {/* Side rigth */}
-            <div className="my-4 mx-4 border rounded-xl p-4 bg-white/10 shadow-md shadow-white/20">
+            <div className="my-4 mx-2 border rounded-xl p-4 bg-white/10 shadow-md shadow-white/20">
 
               {/* Card presentation */}
-              <div className="flex flex-wrap justify-center items-center gap-4">
-                <div className="p-4">
-                  <img src="./src/assets/foto-perfil.png" alt="" className="object-cover object-center size-30 rounded-full shadow-lg shadow-gray-700 hover:scale-105 transition-transform" />
-                </div>
-                <div className="w-100">
-                  <h2 className="text-2xl text-shadow-lg text-shadow-gray-900">QUIEN SOY Y MI PASION</h2>
-                  <p className="text-black font-semibold">Desarrollador Full Stack con experiencia en JavaScript, React, Bootstrap y
-                    Python, enfocado en crear soluciones eficientes, seguras y orientadas al usuario.
-                    Mi camino comenzó desde el emprendimiento: la necesidad de construir mi
-                    propio ecommerce despertó mi pasión por la programación. Hoy combino
-                    visión de negocio con mentalidad técnica para crear proyectos escalables y con
-                    impacto real. Destaco por mi curiosidad constante, pensamiento analítico y el
-                    deseo de ayudar a otros a entender y aprovechar el mundo tecnológico.
-                  </p>
-                </div>
-              </div>
+              <CardPresentation />
             </div>
 
           </div>
@@ -103,7 +94,6 @@ function App() {
               {ProjectsAi.length === 0 ? (
                 <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
               ) : (ProjectsAi.map((project) =>
-
                 <CardDetails project={project}/>
               )
               )}
@@ -117,7 +107,6 @@ function App() {
               {CollaborativeProjects.length === 0 ? (
                 <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
               ) : (CollaborativeProjects.map((project) =>
-
                 <CardDetails project={project} />
               )
               )}
@@ -132,7 +121,6 @@ function App() {
               {OwnProjects.length === 0 ? (
                 <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
               ) : (OwnProjects.map((project) =>
-
                 <CardDetails project={project} />
               )
               )}
