@@ -2,6 +2,7 @@ import { Github } from "./components/GithubIcons"
 import { Linkedin } from "./components/LinkedindIcons"
 import { XIcon } from "./components/XIcons"
 import { GmailIcon } from "./components/GmailIcons"
+import { CardDetails } from "./components/Common/Card"
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
       url: "https://github.com/Contredu/portafolio-carlos",
       imagen: "./src/assets/inoxia.png",
       description: "Les presento mi portafolio mi primer proyecto propio hecho desde cero, aquí he utilizado React y Tailwind CSS, demostrando mis habilidades en desarrollo web."
-    }
+    }  
   ]
 
   const CollaborativeProjects = [
@@ -43,7 +44,6 @@ function App() {
       description: "Les presento mi portafolio mi primer proyecto propio hecho desde cero, aquí he utilizado React y Tailwind CSS, demostrando mis habilidades en desarrollo web."
     }
   ]
-
 
   return (
     <>
@@ -103,17 +103,8 @@ function App() {
               {ProjectsAi.length === 0 ? (
                 <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
               ) : (ProjectsAi.map((project) =>
-                <div className="my-2 bg-white/20 border-2 border-black rounded-lg" key={project.id}>
-                  <img src={project.imagen} className="h-70 p-2 justify-center size-fit object-cover" />
-                  <div className="flex flex-col my-2">
-                    <h3 className="text-2xl mb-2 text-black font-bold text-shadow-lg text-shadow-gray-600">{project.name}</h3>
-                    <p className="px-4">{project.description}</p>
-                    <a className="m-4 py-2 border-2 border-black rounded-2xl bg-black text-white hover:bg-gray-900 transition duration-150 hover:scale-105" href={project.url} target="_blank" rel="noopener noreferrer">
-                      Enlace a repositorio
-                    </a>
-                  </div>
 
-                </div>
+                <CardDetails project={project}/>
               )
               )}
             </div>
@@ -126,17 +117,8 @@ function App() {
               {CollaborativeProjects.length === 0 ? (
                 <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
               ) : (CollaborativeProjects.map((project) =>
-                <div className="my-2 bg-white/20 border-2 border-black rounded-lg" key={project.id}>
-                  <img src={project.imagen} className="h-70 p-2 justify-center object-cover size-fit" />
-                  <div className="flex flex-col my-2">
-                    <h3 className="text-2xl mb-2 text-black font-bold text-shadow-lg text-shadow-gray-600">{project.name}</h3>
-                    <p className="px-4">{project.description}</p>
-                    <a className="m-4 py-2 border-2 border-black rounded-2xl bg-black text-white hover:bg-gray-900 transition duration-150 hover:scale-105" href={project.url} target="_blank" rel="noopener noreferrer">
-                      Enlace a repositorio
-                    </a>
-                  </div>
 
-                </div>
+                <CardDetails project={project} />
               )
               )}
 
@@ -151,17 +133,7 @@ function App() {
                 <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
               ) : (OwnProjects.map((project) =>
 
-                <div className="my-2 bg-white/20 border-2 border-black rounded-lg" key={project.id}>
-                  <img src={project.imagen} className="h-70 p-2 justify-center size-fit object-cover" />
-                  <div className="flex flex-col my-2">
-                    <h3 className="text-2xl mb-2 text-black font-bold text-shadow-lg text-shadow-gray-600">{project.name}</h3>
-                    <p className="px-4">{project.description}</p>
-                    <a className="m-4 py-2 border-2 border-black rounded-2xl bg-black text-white hover:bg-gray-900 transition duration-150 hover:scale-105" href={project.url} target="_blank" rel="noopener noreferrer">
-                      Enlace a repositorio
-                    </a>
-                  </div>
-
-                </div>
+                <CardDetails project={project} />
               )
               )}
 
