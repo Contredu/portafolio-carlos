@@ -12,10 +12,10 @@ function App() {
     {
       id: "1",
       name: "Inoxia Ecommerce",
-      url: "https://github.com/Contredu/portafolio-carlos",
+      url: "",
       imagen: "./src/assets/inoxia.png",
       description: "Actualmente en desarrollo, proximamente disponible."
-    }  
+    }
   ]
 
   const CollaborativeProjects = [
@@ -74,10 +74,13 @@ function App() {
             </div>
 
             {/* Side rigth */}
-            <div className="my-4 mx-2 border rounded-xl p-4 bg-white/10 shadow-md shadow-white/20">
+            <div className="my-4 p-4 gap-4">
+            <h2 className="font-serif text-4xl text-shadow-lg text-shadow-gray-900">¡Hola! Soy Carlos Contreras</h2>
 
+            <div className="my-4 mx-2 border rounded-xl p-4 bg-white/10 shadow-md shadow-white/20">
               {/* Card presentation */}
               <CardPresentation />
+            </div>
             </div>
 
           </div>
@@ -94,7 +97,7 @@ function App() {
               {ProjectsAi.length === 0 ? (
                 <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
               ) : (ProjectsAi.map((project) =>
-                <CardDetails project={project}/>
+                <CardDetails project={project.id} name={project.name} url={project.url} imagen={project.imagen} description={project.description} />
               )
               )}
             </div>
@@ -107,7 +110,7 @@ function App() {
               {CollaborativeProjects.length === 0 ? (
                 <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
               ) : (CollaborativeProjects.map((project) =>
-                <CardDetails project={project} />
+                <CardDetails project={project.id} name={project.name} url={project.url} imagen={project.imagen} description={project.description} />
               )
               )}
 
@@ -121,7 +124,7 @@ function App() {
               {OwnProjects.length === 0 ? (
                 <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
               ) : (OwnProjects.map((project) =>
-                <CardDetails project={project} />
+                <CardDetails project={project.id} name={project.name} url={project.url} imagen={project.imagen} description={project.description} />
               )
               )}
 
