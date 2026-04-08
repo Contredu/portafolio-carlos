@@ -3,7 +3,7 @@ export const CardPresentation = () => {
         <>
         <div className="flex flex-wrap justify-center items-center gap-4">
                 <div className="p-4">
-                  <img src="./src/assets/foto-perfil.png" alt="" className="object-cover object-center size-30 rounded-full shadow-lg shadow-gray-700 hover:scale-105 transition-transform" />
+                  <img src="./foto-perfil.png" alt="" className="object-cover object-center size-30 rounded-full shadow-lg shadow-gray-700 hover:scale-105 transition-transform" />
                 </div>
                 <div className="w-100">
                   <h2 className="text-2xl text-shadow-lg text-shadow-gray-900">QUIEN SOY Y MI PASION</h2>
