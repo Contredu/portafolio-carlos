@@ -15,7 +15,7 @@ export const GmailIcon = () => {
 
             <button type="button" command="show-modal" commandfor="gmail-modal" className="size-16 rounded-full  shadow-black/80 shadow-lg transition-transform duration-300 hover:scale-110">
                 <svg className="bg-white text-[#EA4335] size-16 rounded-full">
-                    <use href="./src/assets/SVG Redes sociales/sprite.svg#icon-gmail" />
+                    <use href="./SVG Redes sociales/sprite.svg#icon-gmail" />
                 </svg></button>
             <el-dialog>
                 <dialog
@@ -48,7 +48,7 @@ export const GmailIcon = () => {
                                     <div className="py-8 flex items-center gap-6">
                                         <input type="text" className="w-100 font-bold text-2xl text-gray-700" id="email" value="carloscontreras.dev@gmail.com" readOnly />
                                         <svg className="size-6 hover:scale-110 transition-transform duration-150" onClick={copyText}>
-                                            <use href="./src/assets/SVG Redes sociales/sprite.svg#icon-copy" />
+                                            <use href="./SVG Redes sociales/sprite.svg#icon-copy" />
                                         </svg>
                                     </div>
                                 </div>
