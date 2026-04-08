@@ -13,7 +13,7 @@ function App() {
       id: "1",
       name: "Inoxia Ecommerce",
       url: "",
-      imagen: "./src/assets/inoxia.png",
+      imagen: "./inoxia.png",
       description: "Actualmente en desarrollo, proximamente disponible."
     }
   ]
@@ -23,7 +23,7 @@ function App() {
       id: "1",
       name: "Reno Usa",
       url: "https://github.com/IgrowkerTraining/i006-reno-usa-fullstack",
-      imagen: "./src/assets/Reno.png",
+      imagen: "./Reno.png",
       description: "Reno usa es un proyecto colaborativo que busca crear una solución integral para la gestión de datos en el sector de la construcción, en este proyecto estuve trabajando en la parte del Frontend en la construcción del dashboard y de la página de control del proyecto utilizando React con TypeScript y Tailwind CSS."
     },
 
@@ -31,7 +31,7 @@ function App() {
       id: "2",
       name: "Padel+",
       url: "https://github.com/4GeeksAcademy/fs_pt_115-ProyectoFinal-Padel",
-      imagen: "./src/assets/padel.png",
+      imagen: "./padel.png",
       description: "Proyecto en el que teniamos que demostrar nuestras habilidades con lo aprendido durante el curso, en este proyecto trabaje en la base del backend desarrollando bases de datos y endpoints trabajando con Python MySQL, y en la parte del Frontend desarrollando vista necesaria para la interfaz de usuario trabajando con React y bootstrap."
     }
 
@@ -42,7 +42,7 @@ function App() {
       id: "1",
       name: "Portafolio",
       url: "https://github.com/Contredu/portafolio-carlos",
-      imagen: "./src/assets/portafolio.png",
+      imagen: "./portafolio.png",
       description: "Les presento mi portafolio mi primer proyecto propio hecho desde cero, aquí he utilizado React y Tailwind CSS, demostrando mis habilidades en desarrollo web."
     }
   ]
