@@ -6,6 +6,8 @@ import { CardDetails } from "./components/Common/Card"
 import { MySkills } from "./components/Common/Skills"
 import { CardPresentation } from "./components/Common/CardPresentation"
 
+import inoxia from "./src/assets/inoxia.png"
+
 function App() {
 
   const ProjectsAi = [
@@ -13,7 +15,7 @@ function App() {
       id: "1",
       name: "Inoxia Ecommerce",
       url: "",
-      imagen: "./src/assets/inoxia.png",
+      imagen: inoxia,
       description: "Actualmente en desarrollo, proximamente disponible."
     }
   ]
