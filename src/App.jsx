@@ -97,7 +97,7 @@ function App() {
               {ProjectsAi.length === 0 ? (
                 <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
               ) : (ProjectsAi.map((project) =>
-                <CardDetails project={project.id} name={project.name} url={project.url} imagen={project.imagen} description={project.description} />
+                <CardDetails key={project.id} project={project}/>
               )
               )}
             </div>
@@ -110,7 +110,7 @@ function App() {
               {CollaborativeProjects.length === 0 ? (
                 <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
               ) : (CollaborativeProjects.map((project) =>
-                <CardDetails project={project.id} name={project.name} url={project.url} imagen={project.imagen} description={project.description} />
+                <CardDetails key={project.id} project={project}/>
               )
               )}
 
@@ -124,7 +124,7 @@ function App() {
               {OwnProjects.length === 0 ? (
                 <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
               ) : (OwnProjects.map((project) =>
-                <CardDetails project={project.id} name={project.name} url={project.url} imagen={project.imagen} description={project.description} />
+                <CardDetails key={project.id} project={project}/>
               )
               )}
 
