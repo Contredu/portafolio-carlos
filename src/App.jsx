@@ -5,6 +5,8 @@ import { GmailIcon } from "./components/Button/GmailIcons"
 import { CardDetails } from "./components/Common/Card"
 import { MySkills } from "./components/Common/Skills"
 import { CardPresentation } from "./components/Common/CardPresentation"
+import { Navbar } from "./components/Common/navbar"
+import { Header } from "./components/Common/Header"
 
 function App() {
 
@@ -53,9 +55,16 @@ function App() {
 
   return (
     <>
-      <div className="bg-linear-to-r from-blue-950 via-blue-600
-            to-fuchsia-700 text-center p-5">
+      <div className="bg-black text-white text-center p-5">
+        <Navbar />
+        <Header />
+        <div className="flex justify-between">
+        <p className="text-left text-md">PROYECTOS DESTACADOS</p>
+        <p className="text-blue-400">Ver todos los proyectos</p>
+        </div>
 
+
+        
         <div className="border border-black rounded-lg shadow-lg/50 shadow-black text-white">
           {/* Header */}
           <div className="grid grid-cols-1 sm:grid-cols-2 justify-around items-center p-4">
@@ -79,19 +88,19 @@ function App() {
 
             {/* Side rigth */}
             <div className="my-4 p-4 gap-4">
-            <h2 className="font-serif text-4xl text-shadow-lg text-shadow-gray-900">¡Hola! Soy Carlos Contreras</h2>
+              <h2 className="font-serif text-4xl text-shadow-lg text-shadow-gray-900"></h2>
 
-            <div className="my-4 mx-2 border rounded-xl p-4 bg-white/10 shadow-md shadow-white/20">
-              {/* Card presentation */}
-              <CardPresentation />
-            </div>
+              <div className="my-4 mx-2 border rounded-xl p-4 bg-white/10 shadow-md shadow-white/20">
+                {/* Card presentation */}
+                <CardPresentation />
+              </div>
             </div>
 
           </div>
 
 
           {/* Body */}
-          <h1 className="flex justify-center text-5xl shadow-lg shadow-black/30 my-10 p-4 text-shadow-lg text-shadow-gray-900">Mis proyectos</h1>
+
           <div className="grid grid-cols-1 p-4 sm:grid-cols-3 gap-4">
 
             {/* Projects Whit AI */}
@@ -101,7 +110,7 @@ function App() {
               {ProjectsAi.length === 0 ? (
                 <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
               ) : (ProjectsAi.map((project) =>
-                <CardDetails key={project.id} project={project}/>
+                <CardDetails key={project.id} project={project} />
               )
               )}
             </div>
@@ -114,7 +123,7 @@ function App() {
               {CollaborativeProjects.length === 0 ? (
                 <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
               ) : (CollaborativeProjects.map((project) =>
-                <CardDetails key={project.id} project={project}/>
+                <CardDetails key={project.id} project={project} />
               )
               )}
 
@@ -128,7 +137,7 @@ function App() {
               {OwnProjects.length === 0 ? (
                 <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
               ) : (OwnProjects.map((project) =>
-                <CardDetails key={project.id} project={project}/>
+                <CardDetails key={project.id} project={project} />
               )
               )}
 
