@@ -59,7 +59,7 @@ export const Header = () => {
 
                 {/* Imagen */}
                 <div className="flex justify-items-center">
-                    <img className="mask-y-from-50% mask-radial-[50%_70%] mask-radial-from-80% size-[90%]" src="./public/para nuevo portafolio.webp" alt="foto principal" />
+                    <img className="mask-y-from-50% mask-radial-[50%_70%] mask-radial-from-80% size-[90%]" src="/portafolio.webp" alt="foto principal" />
                 </div>
             </div>
         </>

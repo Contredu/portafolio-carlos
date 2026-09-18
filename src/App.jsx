@@ -28,7 +28,7 @@ function App() {
       url: "https://github.com/IgrowkerTraining/i006-reno-usa-fullstack",
       urlDemo: "",
       imagen: "./Reno.png",
-      description: "Reno usa es un proyecto colaborativo que busca crear una solución integral para la gestión de datos en el sector de la construcción, en este proyecto estuve trabajando en la parte del Frontend en la construcción del dashboard y de la página de control del proyecto utilizando React con TypeScript y Tailwind CSS."
+      description: "Sitio corporativo para empresa de renovacióny construcción en Estados Unidos."
     },
 
     {
@@ -37,7 +37,7 @@ function App() {
       url: "https://github.com/4GeeksAcademy/fs_pt_115-ProyectoFinal-Padel",
       urlDemo: "",
       imagen: "./padel.png",
-      description: "Proyecto en el que teniamos que demostrar nuestras habilidades con lo aprendido durante el curso, en este proyecto trabaje en la base del backend desarrollando bases de datos y endpoints trabajando con Python MySQL, y en la parte del Frontend desarrollando vista necesaria para la interfaz de usuario trabajando con React y bootstrap."
+      description: "Plataforma deportiva para reservas de pistas y gestión de torneos de pádel."
     }
 
   ]
@@ -49,7 +49,7 @@ function App() {
       url: "https://github.com/Contredu/portafolio-carlos",
       urlDemo: "https://portafolio-carlos-livid.vercel.app/",
       imagen: "./portafolio.png",
-      description: "Les presento mi portafolio mi primer proyecto propio hecho desde cero, aquí he utilizado React y Tailwind CSS, demostrando mis habilidades en desarrollo web."
+      description: "Mi portafolio web, la puerta de entrada perfecta para que conozcas mi trabajo, mis proyectos y mi visión como desarrollador web."
     }
   ]
 
@@ -118,7 +118,7 @@ function App() {
 
             {/* collaborative projects */}
             <div className="m-2">
-              <h2 className="flex justify-center text-3xl border border-white rounded-4xl m-2 p-1 shadow-lg shadow-gray-600/80 bg-white/20 text-shadow-lg text-shadow-gray-900">Proyectos colaborativos</h2>
+              <h2 className="flex justify-center text-3xl border border-white rounded-4xl m-2 p-1 shadow-lg shadow-gray-600/80 bg-white/20 text-shadow-lg text-shadow-gray-900">Proyectos</h2>
 
               {CollaborativeProjects.length === 0 ? (
                 <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
