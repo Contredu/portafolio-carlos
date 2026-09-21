@@ -1,3 +1,8 @@
+// Aqui solo se utilizara un modelo para todo las tecnologias (codigo mas corto)
+// pasar toda la informacion de los svg a TecnologiasData
+
+import { TecnologiasData } from "../../data/Tecnologias"
+
 export const MySkills = () => {
 
     return (

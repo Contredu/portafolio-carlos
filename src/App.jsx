@@ -7,64 +7,57 @@ import { MySkills } from "./components/Common/Skills"
 import { CardPresentation } from "./components/Common/CardPresentation"
 import { Navbar } from "./components/Common/navbar"
 import { Header } from "./components/Common/Header"
+import { Projects } from "./data/ProjectsData"
 
 function App() {
-
-  const ProjectsAi = [
-    {
-      id: "1",
-      name: "Inoxia Ecommerce",
-      url: "",
-      urlDemo: "",
-      imagen: "./inoxia.png",
-      description: "Actualmente en desarrollo, proximamente disponible."
-    }
-  ]
-
-  const CollaborativeProjects = [
-    {
-      id: "1",
-      name: "Reno Usa",
-      url: "https://github.com/IgrowkerTraining/i006-reno-usa-fullstack",
-      urlDemo: "",
-      imagen: "./Reno.png",
-      description: "Sitio corporativo para empresa de renovacióny construcción en Estados Unidos."
-    },
-
-    {
-      id: "2",
-      name: "Padel+",
-      url: "https://github.com/4GeeksAcademy/fs_pt_115-ProyectoFinal-Padel",
-      urlDemo: "",
-      imagen: "./padel.png",
-      description: "Plataforma deportiva para reservas de pistas y gestión de torneos de pádel."
-    }
-
-  ]
-
-  const OwnProjects = [
-    {
-      id: "1",
-      name: "Portafolio",
-      url: "https://github.com/Contredu/portafolio-carlos",
-      urlDemo: "https://portafolio-carlos-livid.vercel.app/",
-      imagen: "./portafolio.png",
-      description: "Mi portafolio web, la puerta de entrada perfecta para que conozcas mi trabajo, mis proyectos y mi visión como desarrollador web."
-    }
-  ]
 
   return (
     <>
       <div className="bg-black text-white text-center p-5">
         <Navbar />
         <Header />
+
+        {/* PROYECYTOS DESTACADOS */}
         <div className="flex justify-between">
-        <p className="text-left text-md">PROYECTOS DESTACADOS</p>
-        <p className="text-blue-400">Ver todos los proyectos</p>
+          <p className="text-left text-md">PROYECTOS DESTACADOS</p>
+          <p className="text-blue-400">Ver todos los proyectos</p>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-3">
+          {Projects.length === 0 ? (
+            <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
+          ) : (Projects.map((project) =>
+            <CardDetails key={project.id} project={project} />
+          )
+          )}
+        </div>
+
+        {/* DETALLE DEL PROYECTO */}
+        <div className="flex justify-between mt-2">
+          <p className="text-left text-sm">CASO DE ESTUDIO DESTACADO</p>
+        </div>
+
+        {/* TECNOLOGIAS */}
+        <div className="flex justify-between mt-2">
+          <p className="text-left text-sm">TECNOLOGÍAS</p>
+        </div>
+        <div className="my-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 border-4">
+          <div className="p-2 border border-red-400">
+            <p>gasdhfasihdfaisdfiasdifgsa dgabvasdvfavsdfvasdofcxcs fsad fasdfwqaerfwe erawedrfawqera rawedfadsfawed fadgfardfetareds dagfgads gadsgtads fasd fasd fsa f fasd fsdgrghysedfgh dgasdgsad vasodfosdafasdfhasdhfiasdfip budasdgfuasgduasgd joafsdofjasdojfasd dshfasdihfasipdfpsddfasdfhpasdhf</p>
+          </div>
+          <div className="p-2 border border-blue-400">
+            <span>sdausdfuas asdfosdahf dhhfisadfhasd hasd fiohasdoifhsad ohifasdfih asdiohfas dof adshi hasdfjasdf hiasdf hasf phjasfdfh asd hipfasd f hpis dQWSUGDIUs hjvagsdvhascd visa DOHDA SD BGDFS GA SDBLOGO A</span>
+          </div>
+          <div className="p-2 border border-green-400">
+            <span>sdausdfuas asdfosdahf dhhfisadfhasd hasd fiohasdoifhsad ohifasdfih asdiohfas dof adshi hasdfjasdf hiasdf hasf phjasfdfh asd hipfasd f hpis dQWSUGDIUs hjvagsdvhascd visa DOHDA SD BGDFS GA SDBLOGO A</span>
+
+          </div>
+          <div className="p-2 border border-yellow-400">
+            <p>gasdhfasihdfaisdfiasdifgsa dgabvasdvfavsdfvasdofcxcs fsad fasdfwqaerfwe erawedrfawqera rawedfadsfawed fadgfardfetareds dagfgads gadsgtads fasd fasd fsa f fasd fsdgrghysedfgh dgasdgsad vasodfosdafasdfhasdhfiasdfip budasdgfuasgduasgd joafsdofjasdojfasd dshfasdihfasipdfpsddfasdfhpasdhf</p>
+
+          </div>
         </div>
 
 
-        
         <div className="border border-black rounded-lg shadow-lg/50 shadow-black text-white">
           {/* Header */}
           <div className="grid grid-cols-1 sm:grid-cols-2 justify-around items-center p-4">
@@ -103,49 +96,16 @@ function App() {
 
           <div className="grid grid-cols-1 p-4 sm:grid-cols-3 gap-4">
 
-            {/* Projects Whit AI */}
-            <div className="m-2">
-              <h2 className="text-3xl border border-white rounded-4xl m-2 p-1 shadow-lg shadow-gray-600/80 bg-white/20 text-shadow-lg text-shadow-gray-900">Proyectos con AI</h2>
-
-              {ProjectsAi.length === 0 ? (
-                <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
-              ) : (ProjectsAi.map((project) =>
-                <CardDetails key={project.id} project={project} />
-              )
-              )}
-            </div>
 
 
-            {/* collaborative projects */}
-            <div className="m-2">
-              <h2 className="flex justify-center text-3xl border border-white rounded-4xl m-2 p-1 shadow-lg shadow-gray-600/80 bg-white/20 text-shadow-lg text-shadow-gray-900">Proyectos</h2>
-
-              {CollaborativeProjects.length === 0 ? (
-                <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
-              ) : (CollaborativeProjects.map((project) =>
-                <CardDetails key={project.id} project={project} />
-              )
-              )}
-
-            </div>
-
-
-            {/* Own Projects */}
-            <div className="m-2">
-              <h2 className="text-3xl border border-white rounded-4xl m-2 p-1 shadow-lg shadow-gray-600/80 bg-white/20 text-shadow-lg text-shadow-gray-900">Proyectos propios</h2>
-
-              {OwnProjects.length === 0 ? (
-                <h1 className="text-2xl my-10">No hay proyectos aún.</h1>
-              ) : (OwnProjects.map((project) =>
-                <CardDetails key={project.id} project={project} />
-              )
-              )}
-
-            </div>
           </div>
+
+
+          {/* Own Projects */}
+
         </div>
-        <h4 className="mt-2 text-lg font-bold">&copy; 2026 Diseñado por Carlos.Developer</h4>
       </div>
+      <h4 className="mt-2 text-lg font-bold">&copy; 2026 Diseñado por Carlos.Developer</h4>
     </>
   )
 }
