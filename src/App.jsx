@@ -7,6 +7,7 @@ import { MySkills } from "./components/Common/Skills"
 import { CardPresentation } from "./components/Common/CardPresentation"
 import { Navbar } from "./components/Common/navbar"
 import { Header } from "./components/Common/Header"
+import { FrontTech } from "./components/Common/Frontend"
 import { Projects } from "./data/ProjectsData"
 
 function App() {
@@ -32,27 +33,32 @@ function App() {
         </div>
 
         {/* DETALLE DEL PROYECTO */}
-        <div className="flex justify-between mt-2">
+        {/* <div className="flex justify-between mt-2">
           <p className="text-left text-sm">CASO DE ESTUDIO DESTACADO</p>
-        </div>
+        </div> */}
 
         {/* TECNOLOGIAS */}
         <div className="flex justify-between mt-2">
-          <p className="text-left text-sm">TECNOLOGÍAS</p>
+          <p className="text-left text-md">TECNOLOGÍAS</p>
         </div>
         <div className="my-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 border-4">
-          <div className="p-2 border border-red-400">
-            <p>gasdhfasihdfaisdfiasdifgsa dgabvasdvfavsdfvasdofcxcs fsad fasdfwqaerfwe erawedrfawqera rawedfadsfawed fadgfardfetareds dagfgads gadsgtads fasd fasd fsa f fasd fsdgrghysedfgh dgasdgsad vasodfosdafasdfhasdhfiasdfip budasdgfuasgduasgd joafsdofjasdojfasd dshfasdihfasipdfpsddfasdfhpasdhf</p>
+          <div className="p-2 flex flex-col">
+            <span className="text-left text-blue-400 text-sm my-2">FRONTEND</span>
+            <FrontTech />
           </div>
-          <div className="p-2 border border-blue-400">
-            <span>sdausdfuas asdfosdahf dhhfisadfhasd hasd fiohasdoifhsad ohifasdfih asdiohfas dof adshi hasdfjasdf hiasdf hasf phjasfdfh asd hipfasd f hpis dQWSUGDIUs hjvagsdvhascd visa DOHDA SD BGDFS GA SDBLOGO A</span>
+          <div className="p-2 border border-blue-400 flex flex-col">
+            <span className="text-left text-blue-400 text-sm my-2">BACKEND</span>
+
+            <span>sdausdfuas asdfosdahf dhhfisadfhasd hasd fiohasdoifhsad ohifasdfih asdiohfas dof</span>
           </div>
-          <div className="p-2 border border-green-400">
-            <span>sdausdfuas asdfosdahf dhhfisadfhasd hasd fiohasdoifhsad ohifasdfih asdiohfas dof adshi hasdfjasdf hiasdf hasf phjasfdfh asd hipfasd f hpis dQWSUGDIUs hjvagsdvhascd visa DOHDA SD BGDFS GA SDBLOGO A</span>
+          <div className="p-2 border border-green-400 flex flex-col">
+            <span className="text-left text-blue-400 text-sm my-2">DATA & ORM</span>
+            <span>sdausdfuas asdfosdahf dhhfisadfhasd hasd fiohasdoifhsad ohifasdfih asdiohfas dof </span>
 
           </div>
-          <div className="p-2 border border-yellow-400">
-            <p>gasdhfasihdfaisdfiasdifgsa dgabvasdvfavsdfvasdofcxcs fsad fasdfwqaerfwe erawedrfawqera rawedfadsfawed fadgfardfetareds dagfgads gadsgtads fasd fasd fsa f fasd fsdgrghysedfgh dgasdgsad vasodfosdafasdfhasdhfiasdfip budasdgfuasgduasgd joafsdofjasdojfasd dshfasdihfasipdfpsddfasdfhpasdhf</p>
+          <div className="p-2 border border-yellow-400 flex flex-col">
+            <span className="text-left text-blue-400 text-sm my-2">TOOLS</span>
+            <span>gasdhfasihdfaisdfiasdifgsa dgabvasdvfavsdfvasdofcxcs fsad fasdfwqaerfwe erawedrfawqera rawedfadsfawed fadgfardfetareds dagfgads gadsgtads fasd fa</span>
 
           </div>
         </div>
@@ -90,22 +96,9 @@ function App() {
             </div>
 
           </div>
-
-
-          {/* Body */}
-
-          <div className="grid grid-cols-1 p-4 sm:grid-cols-3 gap-4">
-
-
-
-          </div>
-
-
-          {/* Own Projects */}
-
         </div>
+        <h4 className="mt-2 text-left text-sm font-bold">&copy; 2026 Diseñado por Carlos.Developer</h4>
       </div>
-      <h4 className="mt-2 text-lg font-bold">&copy; 2026 Diseñado por Carlos.Developer</h4>
     </>
   )
 }
