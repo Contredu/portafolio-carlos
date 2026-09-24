@@ -9,6 +9,9 @@ import { Navbar } from "./components/Common/navbar"
 import { Header } from "./components/Common/Header"
 import { FrontTech } from "./components/Common/Frontend"
 import { Projects } from "./data/ProjectsData"
+import { BackTech } from "./components/Common/Backend"
+import { DataBaseTech } from "./components/Common/DbyOrm"
+import { ToolsTech } from "./components/Common/Tools"
 
 function App() {
 
@@ -34,33 +37,40 @@ function App() {
 
         {/* DETALLE DEL PROYECTO */}
         {/* <div className="flex justify-between mt-2">
-          <p className="text-left text-sm">CASO DE ESTUDIO DESTACADO</p>
+          <p className="text-left text-md">CASO DE ESTUDIO DESTACADO</p>
         </div> */}
 
         {/* TECNOLOGIAS */}
-        <div className="flex justify-between mt-2">
+        <div className="m-2">
           <p className="text-left text-md">TECNOLOGÍAS</p>
         </div>
-        <div className="my-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 border-4">
+        <div className="my-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <div className="p-2 flex flex-col">
             <span className="text-left text-blue-400 text-sm my-2">FRONTEND</span>
             <FrontTech />
           </div>
-          <div className="p-2 border border-blue-400 flex flex-col">
+          <div className="p-2 flex flex-col">
             <span className="text-left text-blue-400 text-sm my-2">BACKEND</span>
-
-            <span>sdausdfuas asdfosdahf dhhfisadfhasd hasd fiohasdoifhsad ohifasdfih asdiohfas dof</span>
+            <BackTech />
           </div>
-          <div className="p-2 border border-green-400 flex flex-col">
+          <div className="p-2 flex flex-col">
             <span className="text-left text-blue-400 text-sm my-2">DATA & ORM</span>
-            <span>sdausdfuas asdfosdahf dhhfisadfhasd hasd fiohasdoifhsad ohifasdfih asdiohfas dof </span>
-
+            <DataBaseTech />
           </div>
-          <div className="p-2 border border-yellow-400 flex flex-col">
+          <div className="p-2 flex flex-col">
             <span className="text-left text-blue-400 text-sm my-2">TOOLS</span>
-            <span>gasdhfasihdfaisdfiasdifgsa dgabvasdvfavsdfvasdofcxcs fsad fasdfwqaerfwe erawedrfawqera rawedfadsfawed fadgfardfetareds dagfgads gadsgtads fasd fa</span>
-
+            <ToolsTech />
           </div>
+        </div>
+
+        {/* Trayectória */}
+        <div className="flex justify-between mt-2">
+          <p className="text-left text-md">TRAYECTÓRIA</p>
+        </div>
+
+        {/* Servicios Freelance */}
+        <div className="flex justify-between mt-2">
+          <p className="text-left text-md">SERVICIOS FRELANCE</p>
         </div>
 
 

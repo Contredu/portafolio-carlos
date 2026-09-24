@@ -6,7 +6,7 @@
 export const FrontTech = () => {
     return (
         <>
-            <section className="flex flex-wrap">
+            <section className="flex flex-wrap border-r-4 border-fuchsia-500/50">
 
                 <div className=" flex flex-row border p-1 m-2 rounded-md justify-items-center">
                     <span>
