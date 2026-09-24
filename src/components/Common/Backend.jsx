@@ -1,3 +1,9 @@
+// FALTA SVG DE:
+// -Express
+// -FastAPI
+// -JWT
+// -WebSocket
+
 export const BackTech = () => {
     return (
         <>
@@ -14,7 +20,9 @@ export const BackTech = () => {
 
                 <div className="flex flex-row justify-items-center border p-1 m-2 rounded-md">
                     <span>
-
+                        <svg className="text-[#ffffff] size-6 rounded-full inline-block mr-2">
+                            <use href="./SVG Redes sociales/sprite.svg#icon-express" />
+                        </svg>
                     </span>
                     <p className="p-2 text-xs">Express</p>
                 </div>
