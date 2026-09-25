@@ -29,17 +29,26 @@ export const DataBaseTech = () => {
 
                 <div className="flex flex-row justify-items-center border p-1 m-2 rounded-md">
                     <span>
-
+                        <svg className="-[#ffffff] size-6 rounded-full inline-block mr-2">
+                            <use href="./SVG Redes sociales/sprite.svg#icon-postgresql" />
+                        </svg>
                     </span>
                     <p className="p-2 text-xs">PostgreSQL</p>
                 </div>
                 <div className="flex flex-row justify-items-center border p-1 m-2 rounded-md">
+                    <span>
+                        <svg className="text-[#c3aa3b] size-6 rounded-full inline-block mr-2">
+                            <use href="./SVG Redes sociales/sprite.svg#icon-sqlalchemy" />
+                        </svg>
+                    </span>
                     <p className="p-2 text-xs">SQLAlchemy</p>
                 </div>
 
                 <div className="flex flex-row justify-items-center border p-1 m-2 rounded-md">
                     <span>
-
+                        <svg className="text-[#ffffff] size-6 rounded-full inline-block mr-2">
+                            <use href="./SVG Redes sociales/sprite.svg#icon-mysql" />
+                        </svg>
                     </span>
                     <p className="p-2 text-xs">MySQL</p>
                 </div>

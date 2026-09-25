@@ -34,25 +34,26 @@ export const BackTech = () => {
                     <p className="p-2 text-xs">Python</p>
                 </div>
                 <div className="flex flex-row justify-items-center border p-1 m-2 rounded-md">
+                    <span>
+                        <svg className="text-[#5FA04E] size-6 rounded-full inline-block mr-2">
+                            <use href="./SVG Redes sociales/sprite.svg#icon-fastapi" />
+                        </svg>
+                    </span>
                     <p className="p-2 text-xs">FastAPI</p>
                 </div>
 
                 <div className="flex flex-row justify-items-center border p-1 m-2 rounded-md">
-                    <span>
-
-                    </span>
                     <p className="p-2 text-xs">REST API</p>
                 </div>
                 <div className="flex flex-row justify-items-center border p-1 m-2 rounded-md">
                     <span>
-
+                        <svg className="text-[#5FA04E] size-6 rounded-full inline-block mr-2">
+                            <use href="./SVG Redes sociales/sprite.svg#icon-jwt" />
+                        </svg>
                     </span>
                     <p className="p-2 text-xs">JWT</p>
                 </div>
                 <div className="flex flex-row justify-items-center border p-1 m-2 rounded-md">
-                    <span>
-
-                    </span>
                     <p className="p-2 text-xs">WebSockets</p>
                 </div>
             </section >
