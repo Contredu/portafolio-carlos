@@ -1,3 +1,5 @@
+// Aqui me falta organizar que los bordes de las tarjetas se actualicen segun el color del icono
+
 export const ServiceCardFreelance = ({ service }) => {
     return (
         <>

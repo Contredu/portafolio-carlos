@@ -13,6 +13,7 @@ import { DataBaseTech } from "./components/Common/DbyOrm"
 import { ToolsTech } from "./components/Common/Tools"
 import { ServicesData } from "./data/ServiceFreelance"
 import { ServiceCardFreelance } from "./components/Common/ServiceCard"
+import { HowWork } from "./components/Common/Secciontrabajo"
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
         <Header />
 
         {/* PROYECYTOS DESTACADOS */}
-        <div className="flex justify-between">
+        <div className="flex justify-between m-2">
           <p className="text-left text-md">PROYECTOS DESTACADOS</p>
           <p className="text-blue-400">Ver todos los proyectos</p>
         </div>
@@ -65,12 +66,12 @@ function App() {
         </div>
 
         {/* Trayectória */}
-        <div className="flex justify-between mt-2">
+        {/* <div className="flex justify-between m-2">
           <p className="text-left text-md">TRAYECTÓRIA</p>
-        </div>
+        </div> */}
 
         {/* Servicios Freelance */}
-        <div className="flex justify-between mt-2">
+        <div className="flex justify-between m-2">
           <p className="text-left text-md">SERVICIOS FRELANCE</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
@@ -81,6 +82,9 @@ function App() {
           )
           }
           </div>
+
+          {/* Como trabajo */}
+          <HowWork/>
 
           <div className="border border-black rounded-lg shadow-lg/50 shadow-black text-white">
             {/* Header */}

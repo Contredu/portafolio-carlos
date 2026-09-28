@@ -1,9 +1,3 @@
-// FALTA SVG DE:
-// -GitHub
-// -Git
-// -Vercel
-// -Postman
-
 export const ToolsTech = () => {
     return (
         <>
