@@ -73,7 +73,7 @@ function App() {
         <div className="flex justify-between mt-2">
           <p className="text-left text-md">SERVICIOS FRELANCE</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-4 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
           {ServicesData.length === 0 ? (
             <span>ACTUALMENTE NO DISPONEMOS DE SERVICIOS, ALTO VOLUMEN DE TRABAJO.</span>
           ) : (ServicesData.map((service)=>

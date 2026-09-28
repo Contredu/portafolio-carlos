@@ -7,26 +7,26 @@
     {
       id: 1,
       tittle: "Páginas web profesionales",
-      avatar: "#",
+      avatar: "./icons.svg#icon-world",
       description: "Sitios rápidos, modernos y optimizados para SEO que generan confianza.",
     },
     {
       id: 2,
       tittle: "Ecommerce",
-      avatar: "#",
+      avatar: "./icons.svg#icon-shoppingcart",
       description: "Tiendas online completas con pagos seguros y gestión de productos.",
     },
 
     {
       id: 3,
       tittle: "Aplicaciones web",
-      avatar: "#",
+      avatar: "./icons.svg#icon-smartphone",
       description: "Aplicaciones a medida,escalables y seguras para tu negocio.",
     },
     {
       id: 4,
       tittle: "Automatización e IA",
-      avatar: "#",
+      avatar: "./icons.svg#icon-brain",
       description: "Automatizo procesos e integro IA para ahorrar tiempo y aumentar resultados.",
     }
   ]
