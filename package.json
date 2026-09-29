@@ -13,6 +13,7 @@
     "@tailwindcss/vite": "^4.2.2",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
+    "react-icons": "^5.7.0",
     "scrollbar": "^0.1.12",
     "tailwind-scrollbar": "^4.0.2"
   },

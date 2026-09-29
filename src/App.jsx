@@ -14,6 +14,7 @@ import { ToolsTech } from "./components/Common/Tools"
 import { ServicesData } from "./data/ServiceFreelance"
 import { ServiceCardFreelance } from "./components/Common/ServiceCard"
 import { HowWork } from "./components/Common/Secciontrabajo"
+import { CtaBanner } from "./components/Common/Cta"
 
 function App() {
 
@@ -83,15 +84,23 @@ function App() {
           }
           </div>
 
-          {/* Como trabajo */}
+          {/* How I Work */}
           <HowWork/>
 
-          <div className="border border-black rounded-lg shadow-lg/50 shadow-black text-white">
+          {/* Call to Action */}
+          <CtaBanner/>
+
+          {/* Footer */}
+          
+
+
+{/* 
+          <div className="border border-black rounded-lg shadow-lg/50 shadow-black text-white"> */}
             {/* Header */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 justify-around items-center p-4">
+            {/* <div className="grid grid-cols-1 sm:grid-cols-2 justify-around items-center p-4"> */}
 
               {/* Side left */}
-              <div className="my-4 p-4 flex justify-center items-center flex-col gap-4">
+              {/* <div className="my-4 p-4 flex justify-center items-center flex-col gap-4">
                 <h2 className="font-serif text-4xl text-shadow-lg text-shadow-gray-900">Conéctate conmigo</h2>
                 <section className="flex flex-wrap justify-center items-start my-6 gap-8">
                   <Github />
@@ -99,20 +108,20 @@ function App() {
                   <XIcon />
                   <GmailIcon />
                 </section>
-              </div>
+              </div> */}
 
               {/* Side rigth */}
-              <div className="my-4 p-4 gap-4">
+              {/* <div className="my-4 p-4 gap-4">
                 <h2 className="font-serif text-4xl text-shadow-lg text-shadow-gray-900"></h2>
 
-                <div className="my-4 mx-2 border rounded-xl p-4 bg-white/10 shadow-md shadow-white/20">
+                <div className="my-4 mx-2 border rounded-xl p-4 bg-white/10 shadow-md shadow-white/20"> */}
                   {/* Card presentation */}
-                  <CardPresentation />
+                  {/* <CardPresentation />
                 </div>
               </div>
 
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
           <h4 className="mt-2 text-left text-sm font-bold">&copy; 2026 Diseñado por Carlos.Developer</h4>
         </div >
       </>
