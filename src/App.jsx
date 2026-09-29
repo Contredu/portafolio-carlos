@@ -15,6 +15,7 @@ import { ServicesData } from "./data/ServiceFreelance"
 import { ServiceCardFreelance } from "./components/Common/ServiceCard"
 import { HowWork } from "./components/Common/Secciontrabajo"
 import { CtaBanner } from "./components/Common/Cta"
+import { Footer } from "./components/Common/Footer"
 
 function App() {
 
@@ -91,7 +92,7 @@ function App() {
           <CtaBanner/>
 
           {/* Footer */}
-          
+          <Footer/>
 
 
 {/* 

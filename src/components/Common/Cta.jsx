@@ -11,7 +11,7 @@ export const CtaBanner = () => {
 
   return (
     <>
-      <div className="flex justify-between items-center my-8 p-4 border-2 border-blue-400 rounded-2xl shadow-lg/50 shadow-white bg-linear-to-r from-blue-900/10 to-fuchsia-500/10">
+      <div className="flex justify-between items-center my-8 p-4 border-2 border-blue-400 rounded-2xl shadow-lg/50 shadow-white bg-linear-to-r from-blue-900/10 to-fuchsia-500/10 md:flex-row flex-col gap-4">
         <div className="flex size-36 border-2 border-blue-400 rounded-full mx-10 gap-4 shadow-md/50 shadow-white p-4">
           <svg className="w-full h-full">
             <use href="/icons.svg#icon-avion" />
