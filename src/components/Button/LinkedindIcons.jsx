@@ -4,8 +4,8 @@ export const Linkedin = () => {
 
     return (
         <>
-            <a className="size-16 rounded-full  shadow-black/80 shadow-lg transition-transform duration-300 hover:scale-110" href={urlLinkedin} target="_blank">
-                <svg className="bg-white text-[#1212DE] size-16 rounded-full">
+            <a className="transition-transform duration-300 hover:scale-110" href={urlLinkedin} target="_blank">
+                <svg className="bg-black text-white size-10">
                     <use href="./SVG Redes sociales/sprite.svg#icon-linkedin" />
                 </svg>
             </a>

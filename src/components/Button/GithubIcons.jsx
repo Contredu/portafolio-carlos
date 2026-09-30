@@ -4,8 +4,8 @@ export const Github = () => {
 
     return (
         <>
-            <a className="size-16 rounded-full  shadow-black/80 shadow-lg transition-transform duration-300 hover:scale-110" href={urlGithub} target="_blank">
-                <svg className="bg-black size-16 rounded-full">
+            <a className="shadow-black/80 shadow-lg transition-transform duration-300 hover:scale-110" href={urlGithub} target="_blank">
+                <svg className="bg-black size-10">
                     <use href="./SVG Redes sociales/sprite.svg#icon-github" />
                 </svg>
             </a>
