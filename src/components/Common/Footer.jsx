@@ -1,7 +1,7 @@
-import { Github } from "../Button/GithubIcons";
-import { XIcon } from "../Button/XIcons";
-import { Linkedin } from "../Button/LinkedindIcons";
-import { GmailIcon } from "../Button/GmailIcons";
+import { Github } from "../Boutons/Github_button";
+import { XIcon } from "../Boutons/X_button";
+import { Linkedin } from "../Boutons/Linkedin_button";
+import { GmailIcon } from "../Boutons/Gmail_button";
 
 export const Footer = () => {
   return (
