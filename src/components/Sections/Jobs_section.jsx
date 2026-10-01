@@ -4,7 +4,7 @@ export const HowWork = () => {
             <div className="flex mt-2">
                 <span>
                     <svg className="size-5 rounded-full">
-                        <use href="./public/icons.svg#icon-smallarrow" />
+                        <use href="./icons.svg#icon-smallarrow" />
                     </svg>
                 </span>
                 <p className="text-left text-md">CÓMO TRABAJO </p>
@@ -20,7 +20,7 @@ export const HowWork = () => {
                             <span className="font-semibold text-blue-400 p-2"> Entender</span>
                             <span>
                                 <svg className="size-10 ">
-                                    <use href="./public/icons.svg#icon-arrowright" />
+                                    <use href="./icons.svg#icon-arrowright" />
                                 </svg>
                             </span>
                         </div>
@@ -54,7 +54,7 @@ export const HowWork = () => {
                             <span className="font-semibold text-blue-400 p-2">Construir</span>
                             <span>
                                 <svg className="size-10 ">
-                                    <use href="./public/icons.svg#icon-arrowright" />
+                                    <use href="./icons.svg#icon-arrowright" />
                                 </svg>
                             </span>
                         </div>
@@ -71,7 +71,7 @@ export const HowWork = () => {
                             <span className="font-semibold text-blue-400 p-2">Lanzar</span>
                             <span>
                                 <svg className="size-10 ">
-                                    <use href="./public/icons.svg#icon-arrowright" />
+                                    <use href="./icons.svg#icon-arrowright" />
                                 </svg>
                             </span>
                         </div>
@@ -88,7 +88,7 @@ export const HowWork = () => {
                             <span className="font-semibold text-blue-400 p-2">Mejorar</span>
                             <span>
                                 <svg className="size-10 ">
-                                    <use href="./public/icons.svg#icon-arrowright" />
+                                    <use href="./icons.svg#icon-arrowright" />
                                 </svg>
                             </span>
                         </div>
