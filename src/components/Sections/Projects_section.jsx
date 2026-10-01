@@ -8,7 +8,7 @@ export const Projects_section = () => {
         <p className="text-left text-md w-full justify-start items-center flex">
           <span>
             <svg className="size-5 rounded-full">
-              <use href="./public/icons.svg#icon-smallarrow" />
+              <use href="./icons.svg#icon-smallarrow" />
             </svg>
           </span>
           PROYECTOS DESTACADOS

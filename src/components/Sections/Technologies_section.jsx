@@ -9,7 +9,7 @@ export const Technologies = () => {
       <div className="flex m-2">
         <p className="text-left text-md flex items-center justify-center"><span>
             <svg className="size-5 rounded-full">
-              <use href="./public/icons.svg#icon-smallarrow" />
+              <use href="./icons.svg#icon-smallarrow" />
             </svg>
           </span>
           TECNOLOGÍAS

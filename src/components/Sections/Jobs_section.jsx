@@ -37,7 +37,7 @@ export const HowWork = () => {
                             <span className="font-semibold text-blue-400 p-2"> Diseñar</span>
                             <span>
                                 <svg className="size-10 ">
-                                    <use href="./public/icons.svg#icon-arrowright" />
+                                    <use href="./icons.svg#icon-arrowright" />
                                 </svg>
                             </span>
                         </div>
