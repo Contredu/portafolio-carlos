@@ -1,4 +1,4 @@
-import { Navbar } from "./components/Common/Navbar";
+import { Navbar } from "./components/Common/navbar";
 import { Header } from "./components/Common/Header";
 import { HowWork } from "./components/Sections/Jobs_section";
 import { CtaBanner } from "./components/Common/Cta";
