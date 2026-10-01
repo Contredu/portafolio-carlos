@@ -13,7 +13,7 @@ export const HowWork = () => {
             <div className="grid grid-cols-1 md:grid-cols-5  ml-8 mt-4">
                 <div className="flex ">
                     <div className="border-2 border-blue-400 rounded-full size-10 ">
-                        <p className="">01</p>
+                        <p className="w-full h-full flex items-center justify-center">01</p>
                     </div>
                     <div className="flex-col w-full text-left">
                         <div className="flex justify-baseline">
@@ -30,7 +30,7 @@ export const HowWork = () => {
 
                 <div className="flex">
                     <div className="border-2 border-blue-400 rounded-full size-10 ">
-                        <p className="">02</p>
+                        <p className="w-full h-full flex items-center justify-center">02</p>
                     </div>
                     <div className="flex-col w-full text-left">
                         <div className="flex justify-baseline">
@@ -47,7 +47,7 @@ export const HowWork = () => {
 
                 <div className="flex ">
                     <div className="border-2 border-blue-400 rounded-full size-10 ">
-                        <p className="">03</p>
+                        <p className="w-full h-full flex items-center justify-center">03</p>
                     </div>
                     <div className="flex-col w-full text-left">
                         <div className="flex justify-baseline">
@@ -64,7 +64,7 @@ export const HowWork = () => {
 
                 <div className="flex">
                     <div className="border-2 border-blue-400 rounded-full size-10 ">
-                        <p className="">04</p>
+                        <p className="w-full h-full flex items-center justify-center">04</p>
                     </div>
                     <div className="flex-col w-full text-left">
                         <div className="flex justify-baseline">
@@ -81,7 +81,7 @@ export const HowWork = () => {
 
                 <div className="flex">
                     <div className="border-2 border-blue-400 rounded-full size-10 ">
-                        <p className="">05</p>
+                        <p className="w-full h-full flex items-center justify-center">05</p>
                     </div>
                     <div className="flex-col w-full text-left">
                         <div className="flex justify-baseline">

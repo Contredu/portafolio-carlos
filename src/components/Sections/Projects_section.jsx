@@ -4,9 +4,18 @@ import { CardDetails } from "../Common/Project_card";
 export const Projects_section = () => {
   return (
     <>
-      <div className="flex justify-between m-2" id="projects">
-        <p className="text-left text-md">PROYECTOS DESTACADOS</p>
-        <p className="text-blue-400">Ver todos los proyectos</p>
+      <div className="flex m-2" id="projects">
+        <p className="text-left text-md w-full justify-start items-center flex">
+          <span>
+            <svg className="size-5 rounded-full">
+              <use href="./public/icons.svg#icon-smallarrow" />
+            </svg>
+          </span>
+          PROYECTOS DESTACADOS
+        </p>
+        <div className="flex justify-end items-center w-full text-right">
+          <p className="text-blue-400">Ver todos los proyectos</p>
+        </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3">
         {Projects.length === 0 ? (

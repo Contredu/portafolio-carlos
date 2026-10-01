@@ -5,7 +5,7 @@ export const ServiceCardFreelance = ({ service }) => {
         <>
 
             <div className="grid-cols-1 bg-white/20 border-2 border-fuchsia-500/50 rounded-lg p-4 m-3">
-                <div className="h-17 flex flex-row  justify-around overflow-hidden">
+                <div className="flex flex-wrap justify-center items-center h-auto w-auto sm:justify-start gap-4">
                     <div className="size-15 p-4 border-2 border-fuchsia-500/50 rounded-lg">
                         <span>
                             <svg className="size-15">

@@ -47,7 +47,7 @@ export const Footer = () => {
 
       <div className="text-left my-4">
         <p className="text-md text-blue-400">CONECTEMOS</p>
-        <section className="flex gap-8 my-4">
+        <section className="flex flex-wrap gap-8 my-4">
           <Github />
           <Linkedin />
           <XIcon />
