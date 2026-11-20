@@ -1,4 +1,3 @@
-import { Projects } from "../../data/ProjectsData"
 
 export const CardDetails = ({ project }) => {
 
