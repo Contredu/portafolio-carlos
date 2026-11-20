@@ -14,7 +14,7 @@ export const Projects_section = () => {
           PROYECTOS DESTACADOS
         </p>
         <div className="flex justify-end items-center w-full text-right">
-          <p className="text-blue-400">Ver todos los proyectos</p>
+          {/* <p className="text-blue-400">Ver todos los proyectos</p> */}
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3">
