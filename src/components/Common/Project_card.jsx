@@ -1,3 +1,5 @@
+import { Projects } from "../../data/ProjectsData"
+
 export const CardDetails = ({ project }) => {
 
     return (
@@ -12,10 +14,12 @@ export const CardDetails = ({ project }) => {
                     <p className="text-sm scrollbar-none overflow-auto ">{project.description}</p>
                 </div>
                 <div className="flex flex-1 relative p-2">
-                    <a className="h-full w-full me-2 border-2  border-black rounded-md bg-white text-black hover:bg-gray-600 transition duration-150 hover:scale-105" href={project.urlDemo} target="_blank" rel="noopener noreferrer">
+                    {project.urlDemo !== "" && (
+                    <a className="h-full w-full mx-2 border-2  border-black rounded-md bg-white text-black hover:bg-gray-600 transition duration-150 hover:scale-105" href={project.urlDemo} target="_blank" rel="noopener noreferrer">
                         Demo
                     </a>
-                    <a className="h-full w-full me-2 border-2 border-black rounded-md bg-black text-white hover:bg-gray-900 transition duration-150 hover:scale-105" href={project.url} target="_blank" rel="noopener noreferrer">
+                    )}
+                    <a className="h-full w-full mx-2 border-2 border-black rounded-md bg-black text-white hover:bg-gray-900 transition duration-150 hover:scale-105" href={project.url} target="_blank" rel="noopener noreferrer">
                         Github
                     </a>
                 </div>
